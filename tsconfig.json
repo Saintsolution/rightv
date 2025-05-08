@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Moderno e compatível com Vite
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Suporte completo ao navegador
+    "allowJs": false, // ✅ Mantido falso, já que usa TS
+    "skipLibCheck": true, // Evita checagem em node_modules
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true, // Ótimo: força boas práticas
+    "forceConsistentCasingInFileNames": true, // Evita problemas de case no import
+    "noEmit": true, // Sem necessidade de output com Vite
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true, // Permite importar arquivos JSON
+    "isolatedModules": true,
+    "jsx": "react-jsx", // JSX moderno (React 17+)
+    "types": ["vite/client"], // Ajuda com os tipos do Vite
+    "baseUrl": "./src", // Caminhos relativos a `src`
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"]
+    }
+  },
+  "include": ["src", "vite-env.d.ts"],
+  "exclude": ["node_modules"]
+}
